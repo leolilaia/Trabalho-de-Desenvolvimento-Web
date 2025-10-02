@@ -1,0 +1,88 @@
+<!-- Trabalho feito por: Leonardo de Oliveira Laia, Lucas de Souza Arpini -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Altura Prédio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#explicacao">Explicação</a></li>
+            <li><a href="#exemplo">Exemplo</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#altura">Altura do prédio</a></li>
+        </ul>
+    </nav>
+
+    <header id="explicacao">
+        <h1>Como calcular a altura de um prédio usando trigonometria?</h1>
+        <img src="imagem-predio.webp" alt="Foto de predio">
+        <p id="paragrafo">
+            Em geral, quando vamos mediar uma altura/comprimento é comum pensarmos logo em usar uma fita métrica. Mas
+            você já imaginou como se faz para medir um prédio super alto? Ou medir a distância reta de um ponto ao outro
+            tendo uma montanha no meio? Pois então, na engenharia é muito comum realizar medições não muito convenientes
+            e existem outras formas de realizar essas medidas que não envolve necessariamente uma fita métrica.
+        </p>
+    </header>
+
+    <section id="explicacao">
+        <h2>Explicação</h2>
+        <div class="registro">
+            <p>Todo estudante que cursou o ensino médio já deve ter ouvido falar da tão temida trigonometria. Mas ela
+                pode ser bem útil quando precisamos realizar a medida de lugares bem altos. Para isso você vai precisar,
+                no mínimo, de um daqueles transferidores.</p>
+            <p>Imagine que você precise medir um prédio, e este faz uma grande sombra no chão. Para saber a altura do
+                prédio você precisa saber o comprimento desta sombra e o ângulo que o sol está em relação a este prédio.
+                Pronto, temos um triângulo retângulo e então podemos aplicar a trigonometria nele.</p>
+        </div>
+    </section>
+
+    <section id="exemplo">
+        <h2>Exemplo</h2>
+        <div class="registro">
+            <img id="imagem1" src="imagem-predio-exemplo.jpg">
+            <img id="imagem2" src="Fórmula.png">
+            <p>Como a altura do prédio seria o cateto oposto ao ângulo e o comprimento da sobra o tal do cateto
+                adjacente, nós temos que usar a fórmula da tangente do ângulo.</p>
+        </div>
+    </section>
+
+    <section id="calculadora">
+        <h2>Calculadora</h2>
+        <p>Insira os itens solicitados para calcular a altura do prédio:</p>
+        <div id="CaixasDeEntrada">
+            <input id="altura" type="number" placeholder="Sua altura:">
+            <input id="angulo" type="number" placeholder="Ângulo ao prédio:">
+            <input id="distancia" type="number" placeholder="Distancia ao prédio:">
+        </div>
+
+        <div id="botoes">
+            <button id="calcular" onclick="calcula()">CALCULAR</button>
+        </div>
+    </section>
+
+    <section id="altura">
+        <h2>Altura do prédio</h2>
+        <div>
+            <p id="resp"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Leonardo de Oliveira Laia, Lucas de Souza Arpini</p>
+        <a href="motivacao.html" class="botao-motivacao">💡 Motivação</a>
+    </footer>
+
+</body>
+
+</html>
